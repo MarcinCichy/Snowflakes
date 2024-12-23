@@ -1,4 +1,4 @@
-# Terminal Snow Animation
+# Snow Animation in Terminal - "Za Rączkę" Christmas Challenge
 
 ## Description
 

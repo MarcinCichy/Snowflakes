@@ -3,7 +3,13 @@ import time
 import random
 
 
-SCREEN_WIDTH = 120
+"""
+    UWAGA - ten kod uruchamiać jedynie w Linuxie, ponieważ w Windowsie nie działa poprawnie wyświetlanie znaków Unicode.
+    NOTE - run this code only in Linux, because in Windows the display of Unicode characters does not work correctly
+
+"""
+
+SCREEN_WIDTH = 200
 SCREEN_HEIGHT = 60
 
 # SHAPES = ['❅', '❆', '⋆', '✱', '❋', '✻', '✼', '•', '°']
@@ -45,7 +51,7 @@ def main():
     while True:
         clear_screen()
 
-        for _ in range(random.randint(1, 3)):
+        for _ in range(random.randint(1, 8)):
             if random.random() < 0.8:
                 x = random.randint(0, SCREEN_WIDTH - 1)
                 symbol = random.choice(SHAPES)
@@ -63,6 +69,6 @@ def main():
 
 
 if __name__ == "__main__":
-    # if os.name == "nt":
-    #     os.system('chcp 65001 >nul')
+    if os.name == "nt":
+        os.system('chcp 65001 >nul')
     main()

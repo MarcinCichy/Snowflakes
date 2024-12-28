@@ -4,16 +4,20 @@
 
 This project is a simple Python script that generates a snow animation in the terminal. It uses Unicode characters to represent snowflakes that fall randomly across the screen, creating a wintery scene.
 
-**WARNING**: Run this code only on Linux, as Unicode character display does not work correctly on Windows.
+WARNING: This code works best on Linux. On Windows, you may experience issues with Unicode display. To fix this, set the terminal font to "MS Gothic" and change the code page by running:
+
+```bash
+chcp 65001
+```
 
 ## Demo
 
-Watch the snow animation in action on [YouTube](https://youtu.be/zv-8ctvnOHI).
+Watch the snow animation in action on [YouTube](https://youtu.be/yP63y9B1MLk).
 
 ## Requirements
 
 - Python 3.x
-- Linux operating system
+- Linux or macOS operating system (Windows requires additional setup)
 - Terminal that supports Unicode characters
 
 ## Installation
@@ -52,6 +56,19 @@ Watch the snow animation in action on [YouTube](https://youtu.be/zv-8ctvnOHI).
 - **Compatibility**: The script is optimized to run on Linux systems. Displaying Unicode characters on Windows may be problematic, even after setting the appropriate code page.
 - **Customization**: You can adjust SCREEN_WIDTH and SCREEN_HEIGHT to fit the size of your terminal.
 - **Unicode Characters**: The list of available snowflake characters is stored in the SHAPES variable. You can add or change characters according to your preferences.
+
+## Windows Support (Optional)
+
+1. Open CMD or PowerShell.
+
+2. Set the terminal font to MS Gothic.
+
+3. Run the following command to enable UTF-8 encoding:
+``` bash
+chcp 65001
+```
+
+4. Now, you can run the script without issues.
 
 
 

@@ -7,7 +7,7 @@ SHAPES = ['❅', '❆', '⋆', '✱', '❋', '✻', '✼', '•', '°']
 
 
 class Flake:
-    def __init__(self, pos_y, pos_x, shape):
+    def __init__(self, pos_x, pos_y, shape):
         self.pos_x, self.pos_y, self.shape = pos_x, pos_y, shape
 
     def move(self):
@@ -28,8 +28,8 @@ def draw(flakes, snow_layer):
                 screen[SCREEN_HEIGHT - 1 - y][x] = SHAPES[1]
 
     for f in flakes:
-        if 0 <= f.y < SCREEN_HEIGHT:
-            screen[f.y][f.x] = f.shape
+        if 0 <= f.pos_y < SCREEN_HEIGHT:
+            screen[f.pos_y][f.pos_x] = f.shape
 
     print('\n'.join([''.join(row) for row in screen]))
 
@@ -55,9 +55,9 @@ def main():
         remaining = []
         for flake in flakes:
             flake.move()
-            if flake.y >= SCREEN_HEIGHT - snow_layer[flake.x] - 1:
-                if snow_layer[flake.x] < max_layer[flake.x]:
-                    snow_layer[flake.x] += 1
+            if flake.pos_y >= SCREEN_HEIGHT - snow_layer[flake.pos_x] - 1:
+                if snow_layer[flake.pos_x] < max_layer[flake.pos_x]:
+                    snow_layer[flake.pos_x] += 1
             else:
                 remaining.append(flake)
 

@@ -35,15 +35,19 @@ Watch the snow animation in action on [YouTube](https://youtu.be/yP63y9B1MLk).
     Ensure you have execute permissions for the script. You can set the permissions using the following command:
 
     ```bash
-    chmod +x snow_animation.py
+    chmod +x snowflakes.py
     ```
     Then, run the script:
 
     ```bash
-    python3 snow_animation.py
+    python3 snowflakes.py
     ```
-
-2. Stop the Animation
+2. Run the Snow Animation with banner
+   An alternative script snowflakes_banner.py has been created to display a custom message in falling snow. For example, to display "HAPPY NEW YEAR":
+   ```bash
+   python3 snowflakes_banner.py
+    ```
+3. Stop the Animation
 
     To stop the animation, press Ctrl + C in the terminal.
 
@@ -51,11 +55,13 @@ Watch the snow animation in action on [YouTube](https://youtu.be/yP63y9B1MLk).
 - **Snowflake Generation**: The script randomly generates snowflakes at the top of the screen.
 - **Snowflake Movement**: Snowflakes move downward at varying speeds and may slightly shift left or right.
 - **Screen Refreshing**: The screen is regularly cleared and redrawn to create a smooth animation effect.
+- **Custom Banner**: The snowflakes_banner.py script overlays a user-defined message within the snow animation, creating a festive banner effect.
 
 ## Notes
 - **Compatibility**: The script is optimized to run on Linux systems. Displaying Unicode characters on Windows may be problematic, even after setting the appropriate code page.
 - **Customization**: You can adjust SCREEN_WIDTH and SCREEN_HEIGHT to fit the size of your terminal.
 - **Unicode Characters**: The list of available snowflake characters is stored in the SHAPES variable. You can add or change characters according to your preferences.
+- **Custom Messages**: With snowflakes_banner.py, you can display personalized messages setup in code as TEXT.
 
 ## Windows Support (Optional)
 

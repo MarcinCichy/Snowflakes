@@ -14,6 +14,7 @@ chcp 65001
 
 Watch the snow animation in action on [YouTube](https://youtu.be/yP63y9B1MLk).
 
+Watch the snow animation with banner in action on [YouTube](https://youtu.be/q8vs6_om1DY).
 ## Requirements
 
 - Python 3.x

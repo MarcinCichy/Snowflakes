@@ -1,5 +1,6 @@
 # Snow Animation in Terminal - "Za Rączkę" Christmas Challenge
-
+### Screenshot:
+![Main application interface](media/snowflakes_banner.png "snowflakes_banner") 
 ## Description
 
 This project is a simple Python script that generates a snow animation in the terminal. It uses Unicode characters to represent snowflakes that fall randomly across the screen, creating a wintery scene.
